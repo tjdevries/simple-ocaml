@@ -4,7 +4,13 @@ module WithFunction = struct
   let read () = Simple.nested_func "read"
   let init () = { x = 1; y = 2 }
   let add t i = { t with x = t.x + i }
+  let sub t i = { t with y = t.y - i }
 end
+
+let a = WithFunction.init ()
+let b = WithFunction.add a 1
+let c = WithFunction.sub b 2
+let _ = c
 
 let read () = "read"
 let _ = read ()

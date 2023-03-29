@@ -1,2 +1,4 @@
 (library
- (name simple))
+ (name simple)
+ (flags
+  (:standard -w -32)))

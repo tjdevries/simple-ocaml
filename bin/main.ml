@@ -24,3 +24,15 @@ let () =
   let open WithFunction in
   let _ = read () in
   print_endline "done"
+
+module X = struct
+  let x = 0
+end
+
+let x = 1
+
+let x ()=
+  let x = x in
+  x + X.x
+
+let _ = x ()

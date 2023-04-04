@@ -32,3 +32,4 @@ _opam/
 duniverse/
 
 *.scip
+scip-snapshot

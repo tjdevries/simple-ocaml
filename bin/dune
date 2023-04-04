@@ -3,3 +3,5 @@
  (name main)
  (flags (:standard -dtypedtree))
  (libraries simple))
+
+; (alias all (deps (alias check)))
